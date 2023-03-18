@@ -58,4 +58,14 @@ Flight::route('PUT /alumnos', function () {
     Flight::jsonp(["Alumno actualizado ..."]);
 });
 
+//Lectura de un registro determinado
+Flight::route('GET /alumnos/@id', function ($id) {
+    // print_r($id);
+    $sentencia = Flight::db()->prepare("SELECT * FROM `alumnos` WHERE id=?");
+    $sentencia->bindParam(1, $id);
+    $sentencia->execute();
+    $datos = $sentencia->fetchAll();
+    Flight::json($datos);
+});
+
 Flight::start();
