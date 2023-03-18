@@ -1,11 +1,12 @@
 # API REST WITH PHP & FLIGHT :gear:
 
-It's contains code to create API REST with Php and Micro Framework Flight.
-This Api works with a table of students. :man_student:
+* It's contains code to create API REST with Php and Micro Framework Flight.
 
-Also use PDO to connect to the database.
+* This Api works with a table of students. :man_student:
 
-Use Plugin VSCODE THUNDER CLIENT to test API in the different methods GET, POST, PUT, DELETE and GET($id).
+* Also use PDO to connect to the database.
+
+* Use Plugin VSCODE THUNDER CLIENT to test API in the different methods GET, POST, PUT, DELETE and GET($id).
 
 ## TECHNOLOGIES & TOOLS :hammer_and_wrench:
 
