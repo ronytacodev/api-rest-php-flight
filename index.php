@@ -9,6 +9,11 @@ Flight::register('db', 'PDO', array('mysql:host=localhost:33065;dbname=api_php_f
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 });
 
+//Inicio
+Flight::route('/', function () {
+    Flight::jsonp(["Api de alumnos"]);
+});
+
 //Lee los datos y los muestra a cualquier interfaz que solicita dichos datos
 Flight::route('GET /alumnos', function () {
     $sentencia = Flight::db()->prepare("SELECT * FROM `alumnos`");
