@@ -39,8 +39,23 @@ Flight::route('DELETE /alumnos', function () {
     $sentencia->bindParam(1, $id);
     $sentencia->execute();
     Flight::jsonp(["Alumno borrado ..."]);
+});
 
-    // me quede en el min 43:40
+//Función para Actualizar registros
+Flight::route('PUT /alumnos', function () {
+    $id = (Flight::request()->data->id);
+    $nombres = (Flight::request()->data->nombres);
+    $apellidos = (Flight::request()->data->apellidos);
+
+    $sql = "UPDATE alumnos SET nombres=? , apellidos= ? WHERE id=?";
+    $sentencia = Flight::db()->prepare($sql);
+
+    $sentencia->bindParam(1, $nombres);
+    $sentencia->bindParam(2, $apellidos);
+    $sentencia->bindParam(3, $id);
+
+    $sentencia->execute();
+    Flight::jsonp(["Alumno actualizado ..."]);
 });
 
 Flight::start();
