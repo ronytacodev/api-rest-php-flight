@@ -1,3 +1,43 @@
+# API REST WITH PHP & FLIGHT :gear:
+
+It's contains code to create API REST with Php and Micro Framework Flight.
+This Api works with a table of students. :man_student:
+
+Also use PDO to connect to the database.
+
+Use Plugin VSCODE THUNDER CLIENT to test API in the different methods GET, POST, PUT, DELETE and GET($id).
+
+## TECHNOLOGIES & TOOLS :hammer_and_wrench:
+
+* PHP 8
+* Flight
+* PDO
+* MYSQL
+* API REST
+* Thunder Client
+
+## Screenshot
+
+![](assets/browserApi.jpg)
+
+---
+
+GET
+
+![](assets/getThunderClient.jpg)
+
+---
+
+PUT
+
+![](assets/putThunderClient.jpg)
+
+---
+
+TABLE ALUMNOS MYSQL
+
+![](assets/tableAlumnos.jpg)
+
 # What is Flight?
 
 Flight is a fast, simple, extensible framework for PHP. Flight enables you to 
